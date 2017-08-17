@@ -236,6 +236,6 @@ In the entry level script, simply import the list from the `endpoints` package a
 ### Attributions
 Icon made by Freepik from [flaticon.com](httsp://www.flaticon.com)
 
--
+---
 
 **<sup>[1]</sup>** Treating request and response bodies as json is a point of debate, as doing so makes the server very opinionated. This behaviour can currently be overriden using middleware, and in the future it will probably be extracted and no longer be the default behaviour.
