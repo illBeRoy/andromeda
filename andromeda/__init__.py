@@ -44,7 +44,7 @@ class Server(object):
 
         try:
             # create instance in the request and server contexts
-            endpoint_instance = endpoint_cls(request, context)
+            endpoint_instance = endpoint_cls(request, self._context)
 
             # run endpoint handler
             response = getattr(endpoint_instance, method)(**uri_params)
@@ -70,7 +70,7 @@ class Server(object):
 
     def _render_response(self, response):
         if isinstance(response, tuple):
-            response = list(response)
+            # response = list(response)
             response[0] = flask.jsonify(response[0])
             response = tuple(response)
         else:
