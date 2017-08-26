@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='andromeda',
-      version='0.1.1',
+      version='0.1.2',
       description='declarative, class-driven framework written around flask',
       author='Roy Sommer',
       url='https://www.github.com/illberoy/andromeda',

@@ -70,7 +70,7 @@ class Server(object):
 
     def _render_response(self, response):
         if isinstance(response, tuple):
-            # response = list(response)
+            response = list(response)
             response[0] = flask.jsonify(response[0])
             response = tuple(response)
         else:
