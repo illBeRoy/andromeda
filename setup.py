@@ -9,4 +9,4 @@ setup(name='andromeda',
       packages=find_packages(),
       include_package_data=True,
       py_modules=['andromeda'],
-      install_requires=['flask==0.12.2'])
+      install_requires=['flask==1.0'])
